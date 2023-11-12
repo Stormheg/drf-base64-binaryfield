@@ -1,0 +1,17 @@
+{
+  "_template": "git@github.com:OmenApps/cookiecutter-django-package.git",
+  "author": "Storm B. Heg",
+  "copyright_year": "2023",
+  "development_status": "Development Status :: 4 - Beta",
+  "docker_compose_python_version": "3.12",
+  "email": "storm@stormbase.digital",
+  "github_owner": "Stormbase",
+  "github_user": "Stormbase",
+  "license": "MIT",
+  "package_description": "Support for base64-encoded binary data in django rest framework serializers",
+  "package_name": "drf_base64_binaryfield",
+  "project_name": "drf-base64-binaryfield",
+  "use_playwright": "n",
+  "use_postgres": "n",
+  "version": "1.0.0"
+}
