@@ -5,15 +5,15 @@
 [![Python Version](https://img.shields.io/pypi/pyversions/drf-base64-binaryfield)][pypi status]
 [![License](https://img.shields.io/pypi/l/drf-base64-binaryfield)][license]
 
-[![Tests](https://github.com/Stormbase/drf-base64-binaryfield/actions/workflows/tests.yml/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/Stormbase/drf-base64-binaryfield/branch/main/graph/badge.svg)][codecov]
+[![Tests](https://github.com/Stormheg/drf-base64-binaryfield/actions/workflows/tests.yml/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/Stormheg/drf-base64-binaryfield/branch/main/graph/badge.svg)][codecov]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
 [pypi status]: https://pypi.org/project/drf-base64-binaryfield/
-[tests]: https://github.com/Stormbase/drf-base64-binaryfield/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/Stormbase/drf-base64-binaryfield
+[tests]: https://github.com/Stormheg/drf-base64-binaryfield/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/Stormheg/drf-base64-binaryfield
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
@@ -131,10 +131,10 @@ This project was generated from [@OmenApps]'s [Cookiecutter Django Package] temp
 [@omenapps]: https://github.com/OmenApps
 [pypi]: https://pypi.org/
 [cookiecutter django package]: https://github.com/OmenApps/cookiecutter-django-package
-[file an issue]: https://github.com/Stormbase/drf-base64-binaryfield/issues
+[file an issue]: https://github.com/Stormheg/drf-base64-binaryfield/issues
 [pip]: https://pip.pypa.io/
 
 <!-- github-only -->
 
-[license]: https://github.com/Stormbase/drf-base64-binaryfield/blob/main/LICENSE
-[contributor guide]: https://github.com/Stormbase/drf-base64-binaryfield/blob/main/CONTRIBUTING.md
+[license]: https://github.com/Stormheg/drf-base64-binaryfield/blob/main/LICENSE
+[contributor guide]: https://github.com/Stormheg/drf-base64-binaryfield/blob/main/CONTRIBUTING.md

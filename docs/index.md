@@ -20,5 +20,5 @@ reference
 contributing
 Code of Conduct <codeofconduct>
 License <license>
-Changelog <https://github.com/Stormbase/drf-base64-binaryfield/releases>
+Changelog <https://github.com/Stormheg/drf-base64-binaryfield/releases>
 ```

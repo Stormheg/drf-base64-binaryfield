@@ -9,8 +9,8 @@ description = "Support for base64-encoded binary data in django rest framework s
 authors = ["Storm Heg <storm@stormbase.digital>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/Stormbase/drf-base64-binaryfield"
-repository = "https://github.com/Stormbase/drf-base64-binaryfield"
+homepage = "https://github.com/Stormheg/drf-base64-binaryfield"
+repository = "https://github.com/Stormheg/drf-base64-binaryfield"
 documentation = "https://drf-base64-binaryfield.readthedocs.io"
 packages = [{ include = "drf_base64_binaryfield", from = "src" }]
 # Explicitly include the compiled translations in the package, as they are gitignored
@@ -26,7 +26,7 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-Changelog = "https://github.com/Stormbase/drf-base64-binaryfield/releases"
+Changelog = "https://github.com/Stormheg/drf-base64-binaryfield/releases"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
