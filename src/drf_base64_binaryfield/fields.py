@@ -87,6 +87,7 @@ class Base64BinaryField(serializers.Field):
 
         Override this method if you want to control how base64 is decoded.
         """
+        data = self._correct_padding(data)
         if self.url_safe:
             # Base64 uses + and /, but these characters are not safe to use in URLs.
             # We allow these characters to be replaced with - and _.
@@ -95,6 +96,16 @@ class Base64BinaryField(serializers.Field):
             # Call b64decode instead of urlsafe_b64decode because we want to pass validate=True
             return base64.b64decode(data, altchars=websafe_substitution_chars, validate=True)
         return base64.b64decode(data, validate=True)
+
+    def _correct_padding(self, data: str) -> str:
+        """Correct base64 padding, if necessary.
+
+        Padding could have been truncated, so we add it back to make sure the data is valid base64.
+        """
+        padding = len(data) % 4
+        if padding:
+            data += "=" * (4 - padding)
+        return data
 
     def to_base64(self, data: bytes) -> bytes:
         """Convert binary data to base64.

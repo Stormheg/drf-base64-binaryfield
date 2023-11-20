@@ -26,7 +26,7 @@ def test_base64_binary_field_to_internal_value_happy(input, url_safe, expected_o
 
 @pytest.mark.parametrize(
     "input",
-    ["#(*@)", "aGVsbG8", "asd/sd/", "123098"],
+    ["#(*@)", "hello", "aGVsbG8==", "aGVsbG8==", "aGVsbG8===", "aGVsbG8====", "aGVsbG8====="],
 )
 @pytest.mark.parametrize("url_safe", [True, False])
 def test_base64_binary_field_to_internal_value_invalid(input, url_safe):
@@ -62,6 +62,20 @@ def test_base64_binary_field_to_representation_invalid():
     with pytest.raises(ValidationError) as exc_info:
         field.to_representation(1)
     assert exc_info.value.detail[0].code == "invalid_type"
+
+
+@pytest.mark.parametrize(
+    "input,corrected_input",
+    [
+        ("WcUTqPwauLDnGdb9uCZ0VQ", "WcUTqPwauLDnGdb9uCZ0VQ=="),
+        ("JWmxDeJ8VCtmukFItR683RM", "JWmxDeJ8VCtmukFItR683RM="),
+        ("402aaUKt/TlX41z5tcQLdv3WMvw", "402aaUKt/TlX41z5tcQLdv3WMvw="),
+    ],
+)
+def test_base64_binary_field_corrects_truncated_padding(input, corrected_input):
+    """Check that the field corrects truncated padding to form valid base64."""
+    field = Base64BinaryField()
+    assert field._correct_padding(input) == corrected_input
 
 
 @pytest.mark.parametrize(
