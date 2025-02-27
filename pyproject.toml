@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "drf-base64-binaryfield"
-version = "1.1.0"
+version = "1.2.0"
 description = "Support for base64-encoded binary data in django rest framework serializers"
 authors = ["Storm Heg <storm@stormbase.digital>"]
 license = "MIT"
