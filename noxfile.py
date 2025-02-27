@@ -26,16 +26,17 @@ except ImportError:
 
 DJANGO_STABLE_VERSION = "4.2"
 DJANGO_VERSIONS = [
-    "3.2",
     "4.1",
     "4.2",
-    "5.0b1",
+    "5.0",
+    "5.1",
+    "5.2b0",
 ]
 
 # PYTHON_STABLE_VERSION should be set to the latest stable Python version
 
-PYTHON_STABLE_VERSION = "3.11"
-PYTHON_VERSIONS = ["3.9", "3.10", "3.11", "3.12"]
+PYTHON_STABLE_VERSION = "3.13"
+PYTHON_VERSIONS = ["3.9", "3.10", "3.11", "3.12", "3.13", "3.14"]
 
 
 package = "drf_base64_binaryfield"
